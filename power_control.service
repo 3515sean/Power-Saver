@@ -1,0 +1,9 @@
+[Unit]
+Description=power off when cpu and gpu utilization are low
+
+[Service]
+User=root
+ExecStart=/usr/bin/power_control.sh
+
+[Install]
+WantedBy=multi-user.target
